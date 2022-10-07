@@ -1,0 +1,148 @@
+.hero {
+  background-image: url("cookies.jpg");
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+  box-shadow: 0px 4px 4px #331839;
+}
+
+h1 {
+  padding-top: 40vh;
+  padding-left: 5vw;
+  color: white;
+  font-family: 'Vollkorn', serif;
+  text-shadow: 4px 4px #331839;
+}
+
+h4 {
+  font-family: 'Vollkorn', serif;
+  margin: initial;
+  padding: initial;
+  color: #331839;
+}
+
+h5 {
+  margin-top: 5 px;
+  margin-bottom: 0;
+  font-family: 'Vollkorn', serif;
+  color: #331839;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  font-family: Lato;
+}
+
+.copyright {
+  font-family: Lato;
+  font-size: 9px;
+  font-style: italic;
+}
+
+mark {
+  padding: initial;
+  margin: initial;
+}
+
+#recipeHeaders {
+  display: flex;
+  justify-content: space-between;
+  background-color: #E8D4ED;
+  padding: 2em;
+}
+
+#extra {
+  background-color: #D2ABDB;
+  padding: 2em;
+}
+
+#recipeHeaders div#ingredients {
+  flex-basis: 30%
+}
+
+#recipeHeaders div#equipment {
+  flex-basis: 23%
+}
+
+#recipeHeaders div#directions {
+  flex-basis: 53%
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media screen and (orientation: portrait) {
+  #recipeHeaders {
+    display: block;
+  }
+  #recipeHeaders div {
+    position: relative;
+    font-size: 120%;
+  }
+  .hero {
+    height: 80vh;
+  }
+  h1 {
+    font-size: 300%;
+    padding-top: 60vh;
+  }
+  #extra div ol li {
+    font-size: 120%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  h1 {
+    font-family: 'Lobster Two', cursive;
+  }
+  .hero {
+    height: 60vh;
+  }
+  h1 {
+    padding-top: 40vh;
+  }
+  #recipeHeaders {
+    display: block;
+  }
+  #recipeHeaders div {
+    position: relative;
+    font-size: 120%;
+  }
+}
+
+/* tp5 edits start here */
+
+#ingredients ul,
+#equipment ul,
+#directions ol,
+#extra ol {
+  visibility: hidden;
+  display: none;
+}
+
+#ingredients.showMe ul,
+#equipment.showMe ul,
+#directions.showMe ol,
+#extra.showMe ol {
+  visibility: visible;
+  display: block;
+}
+
+#title.headline {
+  padding-top: 40vh;
+  padding-left: 5vw;
+  color: teal;
+  font-family: 'Vollkorn', serif;
+  text-shadow: 4px 4px #331839;
+}
+
+#title {
+  padding-top: 40vh;
+  padding-left: 5vw;
+  color: white;
+  font-family: 'Vollkorn', serif;
+  text-shadow: 4px 4px #331839;
+}
